@@ -1,0 +1,18 @@
+@font-face {
+    font-family: sylfaen-header;
+    src: url(./src/fonts/sylfaen-header.ttf);
+}
+
+@font-face {
+    font-family: sylfaen-regular;
+    src: url(./src/fonts/sylfaen-regular.ttf);
+}
+
+.main-nav ul {
+    font-family: sylfaen-header;
+    font-size: 16px;
+}
+
+footer {
+    font-family: sylfaen-header;
+}
