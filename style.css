@@ -120,6 +120,23 @@ footer>p {
     letter-spacing: 2px;
 }
 
+.ftr-category {
+    padding: 0;
+    margin: 0;
+}
+
+hr {
+    border: 1px solid white;
+}
+
+.ftr-socmedia {
+    gap: 20px;
+}
+
+.text-light {
+    margin: 0;
+}
+
 @media (max-width: 425px) {
 
     .main-nav {
@@ -158,5 +175,21 @@ footer>p {
 
     .footer-section {
         margin-top: 40px;
+    }
+
+    .ftr-category {
+        justify-content: space-between !important;
+    }
+
+    .ftr-category li a {
+        font-size: 14px;
+    }
+
+    .ftr-socmedia {
+        gap: 15px;
+    }
+
+    .text-light {
+        font-size: 14px;
     }
 }
