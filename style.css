@@ -17,6 +17,56 @@
     padding-top: 0;
 }
 
+ul li a {
+    color: white !important;
+    letter-spacing: 1px;
+}
+
+.navbar-toggler-icon {
+    background-image: url(./src/img/burgermenu.png);
+}
+
+.nav-right-side {
+    display: flex;
+    gap: 40px;
+}
+
+.search-box {
+    display: flex;
+    gap: 10px;
+}
+
+.search-box input {
+    outline: none;
+    padding-left: 10px;
+    border-radius: 10px;
+    border-color: transparent;
+}
+
+.search-box input::placeholder {
+    font-size: 12px;
+}
+
+.search-box button {
+    font-family: sylfaen-header;
+    color: white;
+    background-color: #c02cb0;
+    border-radius: 10px;
+    border-color: transparent;
+    letter-spacing: 1px;
+
+
+    width: 100px;
+    height: 40px;
+    padding: 0;
+}
+
+.social-icon {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
 a {
     text-decoration: none;
 }
@@ -24,10 +74,14 @@ a {
 .category-list {
     display: flex;
     flex-direction: column;
-    gap: 48px;
+    /* gap: 48px; */
 
-    padding-top: 80px;
-    padding-bottom: 80px;
+    /* padding-top: 80px;
+    padding-bottom: 80px; */
+
+    height: 100vh;
+    justify-content: space-around;
+
     padding-left: 48px;
     padding-right: 48px;
 }
@@ -37,6 +91,8 @@ a {
     justify-content: center;
     align-items: center;
 
+    height: 150px;
+
     border-radius: 20px;
 
     box-shadow: -2px -2px 10px 5px red, 2px 2px 10px 5px blue;
@@ -44,15 +100,15 @@ a {
 
 .category-list-header>h2 {
     font-family: sylfaen-header;
-    font-size: 24px;
+    font-size: 16px;
     letter-spacing: 2px;
     color: white;
-    
+
     margin-bottom: 0;
 }
 
 .category-list-header>h2:hover {
-    font-size: 30px;
+    font-size: 28px;
 }
 
 footer {
@@ -61,6 +117,7 @@ footer {
 
 footer>p {
     margin-bottom: 0;
+    letter-spacing: 2px;
 }
 
 @media (max-width: 425px) {
@@ -69,15 +126,29 @@ footer>p {
         margin-bottom: 40px;
     }
 
+    .nav-right-side {
+        gap: 10px;
+    }
+
     .category-box {
         display: flex;
         flex-direction: column;
+        padding-left: 16px;
+        padding-right: 16px;
         gap: 24px;
     }
 
     .category-list {
         padding: 0 !important;
+        justify-content: center;
         gap: 24px;
+
+        height: 100%;
+    }
+
+    .category-list-header {
+        height: 0;
+        padding: 30px;
     }
 
     .category-list-header>h2 {
