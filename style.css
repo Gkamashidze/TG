@@ -205,3 +205,26 @@ hr {
         font-size: 12px;
     }
 }
+
+/* Page: yuranisganmarteba */
+
+.list-of-surah {
+    padding-top: 24px;
+    padding-bottom: 24px;
+
+    font-family: sylfaen-header;
+
+}
+
+.list-of-surah ol li {
+    padding: 2px;
+}
+
+@media (max-width: 425px) {
+
+    .list-of-surah {
+        padding-top: 0;
+        padding-bottom: 0;
+    }
+
+}
